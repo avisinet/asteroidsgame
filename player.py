@@ -1,11 +1,13 @@
+import pygame, constants
+from circleshape import CircleShape
+
 class Player(CircleShape):
     def __init__(self, x, y):
-        super().__init__(x, y, radius):
-            self.x = x
-            self.y = y
-            self.radius = radius
+        super().__init__(x, y, constants.PLAYER_RADIUS)
+        self.x = x
+        self.y = y
             
-        rotation = 0
+        self.rotation = 0
 
     # in the player class
     def triangle(self):
