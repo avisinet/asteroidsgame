@@ -14,11 +14,12 @@ def main():
     asteroids = pygame.sprite.Group()
     shots = pygame.sprite.Group()
 
-    Player.containers = (updatable, drawable)
-    Shot.conatiners = (shots, updatable, drawable)
     Asteroid.containers = (asteroids, updatable, drawable)
+    Shot.conatiners = (shots, updatable, drawable)
     AsteroidField.containers = updatable
     asteroid_field = AsteroidField()
+
+    Player.containers = (updatable, drawable)
 
     player = Player(constants.SCREEN_WIDTH / 2, constants.SCREEN_HEIGHT / 2)
 
